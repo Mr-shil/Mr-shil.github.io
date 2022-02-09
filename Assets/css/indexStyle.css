@@ -1,0 +1,382 @@
+body
+{
+    background-color: black;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.mainTxtDivCls
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+.CircleUpPartCls
+{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+.heyCls
+{
+    font-family: Bradley Hand ITC;
+}
+.txtDivCls
+{
+    color: white;
+    
+    font-size: 30px;
+    text-align: center;
+    /* circleStyle */
+    border: 1px solid white;
+    border-radius: 50rem;
+    width: 33rem;
+    height: 33rem;
+    transition: 0.5s;
+
+}
+
+
+.txtDivCls:hover
+{
+
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+
+/* .txtDivCls:hover
+{
+    
+    background-image: url(../Images/circle.gif);
+    background-position: 50% 23%;
+    background-size: 10rem;
+    /* border: none; */
+    /* animation-duration: 4s;
+    background-repeat: no-repeat;
+}  */
+
+.myNameCls
+{
+    font-family: Broadway;
+}
+.txtDivCls p
+{
+    margin: 0 !important;
+}
+
+.downArrowCls
+{
+    width: 8%;
+}
+
+.imgDivCls
+{
+    position: fixed;
+    bottom: 5%;
+    right: -26rem;
+}
+
+.fontCls
+{
+    font-family: Broadway;
+}
+
+/* About Cls  */
+.aboutMeheaderDivCls
+{
+    padding-top: 5%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeheaderDivCls p
+{
+    margin: 0;
+}
+
+.lineCls
+{
+    width: 5%;
+    height: 1px;
+    background-color: white;
+    
+}
+
+
+
+.linePadlefCls
+{
+    margin-right: 2%;   
+}
+.linePadRigCls
+{
+    margin-left: 2%;   
+}
+.folioImgDivCls img
+{
+    width: 50%;
+}
+
+
+
+/* Fancy Box Style */
+
+
+.folioDivCls
+{
+    padding-top: 5%;
+    align-items: center;
+}
+.firstBxDivCls p
+{
+    padding: 5% 8% ;
+    margin: 0;
+}
+
+.firstBxDivCls
+{
+    color: white;
+    border: 1px solid white;
+    height: 15rem;
+    
+}
+
+.secBxDivCls
+{
+    border: 1px solid white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: -13px;
+    margin-left: -13px;
+    height: 15rem;
+}
+
+
+
+.folioSkilImgDivCls
+{
+    text-align: end;
+}
+
+
+
+/* Contact Me Section  */
+
+
+.ContactMeMainDiv
+{
+    padding-top: 15%;
+}
+
+.secBxDivCls 
+{
+    background-color: black;
+}
+
+.secBxDivCls p
+{
+    font-family: Bradley Hand ITC;
+}
+
+
+
+
+.secBxDivCls input
+{
+    margin-left: 8%;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    width: 85%;
+    padding: 5px 10px;
+    font-family: Bradley Hand ITC;
+}
+
+
+.contactUsTxtDiv p
+{
+    padding-bottom: 1%;
+}
+
+.InputBoxCls:focus
+{
+    outline: none;
+    border: 1px solid white;
+}
+
+.contactUdBoxDivCls
+{
+    width: 80%;
+    height: 30rem;
+
+}
+
+.contactUsTxtDiv
+{
+    height: 30rem;
+}
+
+textarea:focus
+{
+    border: 1px solid white;
+    outline: none;
+}
+
+.messageCls
+{
+    background-color: black;
+    border:1px solid white;
+    margin-left: 8%;
+    width: 85%;
+}
+
+.subBtnCls
+{
+    /* margin-left: 8%; */
+    width: 102%;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-family: Bradley Hand ITC;
+    padding: 5px;
+    margin-left: -14px;
+    margin-top: -4px;
+}
+.subBtnCls:focus
+{
+    border: 1px solid white;
+    outline: none;
+    
+}
+
+
+.btnDivCls
+{
+    width: 82%;
+    height: 42px;
+    background-color:black;
+    border: 1px solid white;
+    margin-left: 11%;
+    margin-top: 15px;
+}
+
+
+
+
+/* Circle Design */
+.square
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.square span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+    color: white;
+}
+
+
+
+
+/* Footer */
+
+.mainFooterCls
+{
+    padding-top: 11rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-family: Bradley Hand ITC;
+}
+
+.RightDivCls img
+{
+    width: 32px;
+    padding-right: 11px;
+}
+
+.mainFooterDivCls
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastIcon
+{
+    padding-right: 0;
+}
+
+
+.RightDivCls a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.firstBxDivCls:hover
+{
+    box-shadow: 0 0 5px 0 ;
+    background: inherit;
+    background-color: white;
+    backdrop-filter: blur(10px);
+}
